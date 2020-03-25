@@ -15,6 +15,7 @@ body{
   align-items: center;
   justify-content: space-between;
   padding-top: 45px;
+  margin-bottom: 30%;
 }
 .logo{
   font-style: normal;
@@ -67,4 +68,133 @@ body{
   height: 40px;
   border-radius: 50%;
   object-fit: cover;
+}
+.title{
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+  font-size: 48px;
+  line-height: 64px;
+  margin-bottom: 7px;
+}
+.title-en{
+  display: inline-block;
+  font-size: 20px;
+  line-height: 23px;
+  color: #787878;
+  margin-bottom: 38px;
+}
+.info{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.movie-info{
+  display: flex;
+  align-items: center;
+}
+.tag{
+  display: inline-block;
+  color: #333333;
+  padding: 5px 10px;
+  font-size: 16px;
+  line-height: 19px;
+  background: #FFFFFF;
+  border-radius: 3px;
+  margin-right: 20px;
+}
+.country{
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  margin-right: 33px;
+}
+.play{
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.play:before{
+  content: '';
+  height: 30px;
+  width: 30px;
+  background-image: url(../img/play.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin-right: 15px;
+}
+.more{
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.more:after{
+  content: '';
+  height: 30px;
+  width: 30px;
+  background-image: url(../img/play.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin-left: 15px;
+  transform: rotate(90deg);
+}
+.content{
+  display: flex;
+  justify-content: space-between;
+  background: #FFFFFF;
+  border-radius: 3px;
+  color: #000000;
+  padding: 43px 50px;
+}
+.poster{
+  display: block;
+  margin-top: -80px;
+  margin-bottom: 20px;
+}
+.button-watch{
+  background: #FF8F27;
+  padding: 10px 44px;
+  color: #FFFFFF;
+  font-size: 15px;
+  line-height: 16px;
+  border: none;
+}
+.actors-title{
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 150%;
+  padding-left: 15px;
+  margin-bottom: 10px;
+}
+.actors-list{
+  margin: 0;
+  list-style: none;
+  padding-left: 15px;
+  text-decoration: underline;
+}
+.full-info{
+  flex: 0.97;
+  }
+.tabs-item{
+  color: #000000;
+  text-decoration: none;
+  margin-right: 40px;
+  font-size: 18px;
+  line-height: 21px;
+}
+.tabs-item-active{
+  color: #FF8F27;
+}
+.full-content{
+  display: flex;
+  justify-content: space-between;
+}
+.tabs-content{
+  margin-right: 73px;
 }
