@@ -150,11 +150,14 @@ body{
   background: #FFFFFF;
   border-radius: 3px;
   color: #000000;
-  padding: 43px 50px;
+  padding: 3% 4%;
+}
+.short-info{
+  margin-right: 3%;
 }
 .poster{
   display: block;
-  margin-top: -80px;
+  margin-top: -35%;
   margin-bottom: 20px;
 }
 .button-watch{
@@ -164,6 +167,7 @@ body{
   font-size: 15px;
   line-height: 16px;
   border: none;
+  cursor: pointer;
 }
 .actors-title{
   font-weight: 900;
@@ -177,6 +181,7 @@ body{
   list-style: none;
   padding-left: 15px;
   text-decoration: underline;
+  line-height: 150%;
 }
 .full-info{
   flex: 0.97;
@@ -184,9 +189,11 @@ body{
 .tabs-item{
   color: #000000;
   text-decoration: none;
-  margin-right: 40px;
   font-size: 18px;
   line-height: 21px;
+}
+.tabs-item:not(:last-child){
+  margin-right: 4%;
 }
 .tabs-item-active{
   color: #FF8F27;
@@ -196,5 +203,132 @@ body{
   justify-content: space-between;
 }
 .tabs-content{
-  margin-right: 73px;
+  margin-right: 70px;
+}
+.tabs{
+  display: flex;
+  align-items: center;
+  margin-bottom: 4%;
+}
+.text{
+  margin-top: 0;
+}
+.subscribe-title{
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 150%;
+  color: #000000;
+  margin-bottom: 14px;
+  margin-top: 0;
+}
+.subscribe-form{
+  display: flex;
+  margin-bottom: 48px;
+}
+.subscribe-input{
+  font-size: 14px;
+  line-height: 16px;
+  background: rgba(196, 196, 196, 0.5);
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 18px;
+  padding-right: 18px;
+  border: none;
+  color: #AEAEAE;
+}
+.subscribe-button{
+  background: #FF8F27;
+  border-radius: 0px 5px 5px 0px;
+  border: none;
+  padding: 12px;
+}
+@media (max-width: 1200px){
+  .container{
+    max-width: 960px;
+  }
+  .tabs-item{
+    font-size: 16px;
+    }
+}
+
+@media (max-width: 992px){
+  .container{
+    max-width: 740px;
+  }
+  .tabs{
+    flex-wrap: wrap;
+  }
+  .tabs-item{
+    flex-basis: 20%;
+    line-height: 2;
+    }
+  .full-content{
+    flex-wrap: wrap;
+  }
+  .tabs-content{
+    margin-bottom: 5%;
+  }
+  .text{
+    font-size: 14px;
+  }
+  .actors-list{
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px){
+  .container{
+    max-width: 540px;
+  }
+  .more{
+    display: none;
+  }
+  .tabs-item{
+    flex-basis: 33%;
+  }
+  .tabs-content{
+    margin: 0;
+  }
+}
+
+@media (max-width: 578px){
+  .container{
+    max-width: 90%;
+  }
+  .header{
+    flex-wrap: wrap;
+  }
+  .movie-info{
+    flex-wrap: wrap;
+  }
+  .play{
+    flex-basis: 100%;
+    margin-top: 10%;
+  }
+  .search{
+    flex-basis: 100%;
+    order: 3;
+    margin-top: 5%;
+  }
+  .content{
+    flex-wrap: wrap;
+  }
+  .short-info{
+    margin-bottom: 5%;
+  }
+  .actors-list, .actors-title{
+    display: none;
+  }
+  .short-info{
+    margin-right: 0;
+  }
+  .poster{
+    display: inline-block;
+    width: 100%;
+    margin-top: -20%;
+  }
+  .button-watch{
+    width: 100%;
+  }
 }
